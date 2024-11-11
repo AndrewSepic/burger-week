@@ -27,15 +27,15 @@
 
 .reset-button {
   position: absolute;
-  background-color: #48c6f5;
+  background-color: #141313;
   top: 200px;
   margin-left: 20px;
   z-index: 1;
   left: 12px;
   padding: 4px 10px;
   border-radius: 5px;
-  border-color: white;
-  color: blue;
+  border: 1px solid #fcf8ba;
+  color: #48c6f5;
   cursor: pointer;
 }
 
@@ -71,8 +71,15 @@
 }
 .mapboxgl-popup-content h3 {
  margin-top: 0;
-  color: #d86c53;
+color: #d86c53;
+  margin-bottom: 5px;
 }
+
+.mapboxgl-popup-content img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+ }
 
 .mapboxgl-popup-content p {
   margin-bottom: 5px;
@@ -82,10 +89,26 @@
   color: #FFEB3B;
 }
 
+.flex {
+  display: flex;
+}
 .address {
   color: #999;
 }
 
 .bold {
   font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+  .sidebar img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .sidebar .reset-button {
+    top: 135px;
+    margin-left: 47px;
+  }
 }

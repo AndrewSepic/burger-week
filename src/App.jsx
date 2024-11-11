@@ -49,7 +49,7 @@ function App() {
   
         // Create the popup
         const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(
-          `<h3>${feature.properties.name}</h3>
+          `<div class="flex"><img src="./burger.png" alt="burger" /><h3>${feature.properties.name}</h3></div>
           <p><span class="bold">Burgers: </span>${feature.properties.menu}</p>
           <p class="address">${feature.properties.address}</p>
           <p><a href="${feature.properties.link}" target="_blank">More Info</a></p>`
