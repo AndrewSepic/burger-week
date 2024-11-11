@@ -1,0 +1,91 @@
+#root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#map-container {
+  height: 100%;
+  width: 100%;
+  /* temporarily set the background color so we can tell where the map container is positioned */
+  background-color: lightgrey;
+}
+
+.sidebar {
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.reset-button {
+  position: absolute;
+  background-color: #48c6f5;
+  top: 200px;
+  margin-left: 20px;
+  z-index: 1;
+  left: 12px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  border-color: white;
+  color: blue;
+  cursor: pointer;
+}
+
+.marker {
+  background-image: url('/burger.png');
+  background-repeat: no-repeat;
+  background-color: black;
+  border-radius: 30px;
+  border: 1px #48c6f5 solid;
+  width: 30px;
+  height: 30px;
+  background-size: 75%;
+  background-position: 50% 50%;
+}
+.marker::after {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #48c6f5;
+  position: absolute;
+  bottom: -5px;
+  left: 35%;
+}
+
+.mapboxgl-popup-content {
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px #48c6f5 solid;
+  padding: 20px;
+}
+.mapboxgl-popup-content h3 {
+ margin-top: 0;
+  color: #d86c53;
+}
+
+.mapboxgl-popup-content p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.mapboxgl-popup-content a {
+  color: #FFEB3B;
+}
+
+.address {
+  color: #999;
+}
+
+.bold {
+  font-weight: bold;
+}
