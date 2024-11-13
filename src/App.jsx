@@ -29,7 +29,6 @@ function App() {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYW5kcmV3c2VwaWMxIiwiYSI6ImNsbzV0NzQwNTAzYjQyd3MwbHVjaXR1cWUifQ.1Puj3xOeBUWw0cITO38elg'
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: 'mapbox://styles/mapbox/dark-v11',
       center:  [INITIAL_CENTER.lng, INITIAL_CENTER.lat],
       zoom: 3
     }).fitBounds([
@@ -38,6 +37,12 @@ function App() {
     ], {
       padding: {top: 10, bottom:25, left: 155, right: 5}
     })
+
+    mapRef.current.on('style.load', () => {
+      mapRef.current.setConfigProperty('basemap', 'lightPreset', 'night');
+      mapRef.current.setConfigProperty('basemap', 'theme', 'monochrome');
+    });
+
   
   // Add markers to the map
   const geojson = burgergeojson;

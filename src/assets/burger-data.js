@@ -1,3 +1,7 @@
+//
+// Scraped data from https://burgerweek.sevendaysvt.com/
+//
+
 const data = `BLEU NORTHEAST KITCHEN,Venison Burger and Lamb Burger, 25 Cherry St, Burlington, Vermont 05401, United States, { latitude:44.479 longitude:-73.218625 }, https://burgerweek.sevendaysvt.com/burger-special/bleu-northeast-kitchen/
 PIECASSO FAMILY PIZZERIA,Vermuenster Burger, 1899 Mountain Rd. Stowe, VT 05672 802-253-4411, { latitude:44.474005 longitude:-72.714804}, https://burgerweek.sevendaysvt.com/burger-special/piecasso/
 THE SKINNY PANCAKE — BURLINGTON,Cowpoke Burger and SP Smash Burger, 60 Lake St, Burlington, Vermont 05401, United States, {latitude:44.47698347 longitude:-73.21964565}, https://burgerweek.sevendaysvt.com/burger-special/the-skinny-pancake-burlington/

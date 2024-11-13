@@ -1,3 +1,6 @@
+//
+// Script to parse scraped data & generate valid GeoJson
+//
 import fs from 'fs';
 
 // Sample data - replace this with reading from a file if needed
